@@ -1,0 +1,121 @@
+.color-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.color-list__item {
+  width: 32%;
+  box-shadow: 0 0 0 1px $border_gray;
+}
+
+.color-list__link {
+  display: block;
+  padding: 30px 35px 40px;
+  text-decoration: none;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__item:hover {
+  box-shadow: 0 0 0 0px $border_gray;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.color-list__link--green:hover .color-list__title {
+  color: $green;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__link--red:hover .color-list__title {
+  color: $red;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__link--blue:hover .color-list__title {
+  color: $blue;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__link--yellow:hover .color-list__title {
+  color: $yellow;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__link--gray:hover .color-list__title {
+  color: $gray_blue;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__link--violet:hover .color-list__title {
+  color: $violet;
+  transition: color ease-out 0.2s;
+}
+
+.color-list__palette {
+  margin-bottom: 25px;
+}
+
+.color-list__stone {
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.color-list__stone img {
+  margin: 0 auto;
+}
+
+.color-list__title {
+  margin: 0;
+  margin-top: 18px;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  color: $light_black;
+}
+
+@media (max-width: 1250px) {
+  .color-list__item {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .color-list {
+    justify-content: space-evenly;
+  }
+
+  .color-list__item {
+    width: 42%;
+  }
+
+  .сolor-palette__subtitle {
+    font-size: 22px;
+  }
+
+  .color-list__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .сolor-palette__subtitle {
+    font-size: 20px;
+  }
+
+  .color-list__item {
+    width: 100%;
+    max-width: 416px;
+  }
+
+  .color-list__link {
+    padding: 30px 35px 30px;
+  }
+
+  .color-list__title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}

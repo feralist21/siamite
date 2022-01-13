@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  border: 1px solid $light_black;
+  outline: none;
+  background-color: $white;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: $light_black;
+  color: $white;
+  transition: all 0.2s ease-out;
+}
+
+.btn:active {
+  background-color: $gray_text;
+}
+

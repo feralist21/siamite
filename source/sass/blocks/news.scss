@@ -1,0 +1,133 @@
+.news {
+  padding: 100px 0;
+  background-color: $lighten;
+}
+
+.news__subtitle {
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.news__list {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 25px;
+}
+
+.news__item {
+  grid-column: auto / span 3;
+  background-color: $white;
+}
+
+.news__item-link {
+  display: block;
+  text-decoration: none;
+  color: $light_black;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.news__item-link:hover {
+  transition: box-shadow 0.2s ease-out;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.news__item-link:hover .news__item-title {
+  color: $gray_text;
+  transition: color ease-out 0.2s;
+}
+
+.news__item-inner {
+  padding: 18px 24px;
+}
+
+.news__time {
+  display: block;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.news__item-title {
+  margin: 0;
+  margin-top: 7px;
+  font-family: 'Circe', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: left;
+  transition: color ease-out 0.2s;
+}
+
+.news__link {
+  display: block;
+  max-width: 215px;
+  text-align: right;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 25px;
+  color: $light_black;
+}
+
+.news__link:hover {
+  text-decoration: none;
+}
+
+
+@media (max-width: 1024px) {
+  .news {
+    padding: 80px 0;
+  }
+
+  .news__title {
+    margin-bottom: 15px;
+  }
+
+  .news__subtitle {
+    font-size: 22px;
+  }
+
+  .news__link {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    padding: 70px 0;
+  }
+
+  .news__list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .news__item {
+    grid-column: auto / span 6
+  }
+
+  .news__title {
+    margin-bottom: 12px;
+  }
+
+  .news__subtitle {
+    font-size: 20px;
+  }
+
+  .news__link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news__link {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .news__item {
+    grid-column: auto / span 12;
+  }
+}

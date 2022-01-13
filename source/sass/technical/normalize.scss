@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Circe', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
+}
+
+h2, h3, h4 {
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}

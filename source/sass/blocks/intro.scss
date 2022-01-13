@@ -1,0 +1,159 @@
+.intro {
+  padding: 70px 0 80px;
+  background-image: url('../img/intro-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+}
+
+.intro__title span {
+  display: block;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1.1;
+}
+
+.intro__sibtitle {
+  font-size: 30px;
+  line-height: 1.1;
+  color: $white;
+  text-align: center;
+}
+
+.intro__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  margin-bottom: 40px;
+  color: $white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+
+.intro__list-item {
+  grid-column: auto / span 4;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+
+.intro__img-wrapper {
+  width: 63px;
+  flex-shrink: 0;
+}
+
+.intro__text {
+  flex-grow: 1;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.intro__link {
+  max-width: 244px;
+  margin: 0 auto;
+  padding: 18px 0 18px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.31;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $light_black;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .intro__title {
+    font-size: 36px;
+  }
+
+  .intro__title span {
+    font-size: 86px;
+  }
+
+  .intro__sibtitle {
+    font-size: 26px;
+  }
+
+  .intro__text {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__title {
+    font-size: 32px;
+  }
+
+  .intro__title span {
+    font-size: 80px;
+  }
+
+  .intro__sibtitle {
+    font-size: 24px;
+  }
+
+  .intro__list {
+    display: block;
+  }
+
+  .intro__list-item {
+    margin-bottom: 35px;
+    column-gap: 15px;
+  }
+
+  .intro__list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro__img-wrapper {
+    width: 55px;
+  }
+
+  .intro__link {
+    max-width: 210px;
+    font-size: 16px;
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro__title {
+    font-size: 30px;
+  }
+
+  .intro__title span {
+    font-size: 74px;
+  }
+
+  .intro__sibtitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro__title {
+    font-size: 28px;
+  }
+
+  .intro__title span {
+    font-size: 48px;
+  }
+
+  .intro__sibtitle {
+    font-size: 20px;
+  }
+}
